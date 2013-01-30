@@ -9,7 +9,13 @@ import models._
 
 object Application extends Controller {
 
-
+  case class TaskForm(label:String, description:String)
+  val taskForm2 = Form(
+      mapping(
+        "label" -> nonEmptyText,
+        "description" -> nonEmptyText
+      )(TaskForm.apply)(TaskForm.unapply)
+    )
   val taskForm = Form(
     tuple(
       "label" -> nonEmptyText,
@@ -22,22 +28,37 @@ object Application extends Controller {
   }
 
   def tasks = Action {
-    Ok(views.html.index(Task.all(), taskForm))
+    Ok(views.html.index(Task.all(), taskForm2))
   }
+
+  // def newTask = Action { implicit request =>
+  // // with case class
+  //   taskForm.bindFromRequest.fold(
+  //     errors => BadRequest(views.html.index(Task.all(), errors)),
+  //     {
+  //       case (label, description) =>{
+  //         Task.create( label, description)
+  //         Redirect(routes.Application.tasks)
+  //       }
+  //     }
+      
+  //   )
+  // }
 
   def newTask = Action { implicit request =>
   // with case class
-    taskForm.bindFromRequest.fold(
+    taskForm2.bindFromRequest.fold(
       errors => BadRequest(views.html.index(Task.all(), errors)),
       {
-        case (label, description) =>{
-          Task.create( label, description)
+        case form:TaskForm =>{
+          Task.create( form.label, form.description)
           Redirect(routes.Application.tasks)
         }
       }
       
     )
   }
+
 
 
 
