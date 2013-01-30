@@ -11,7 +11,8 @@ object Application extends Controller {
 
 
   val taskForm = Form(
-    "label" -> nonEmptyText
+    "label" -> nonEmptyText,
+    "description" -> nonEmptyText
   )
 
   def index = Action {
@@ -23,14 +24,14 @@ object Application extends Controller {
   }
 
   def newTask = Action { implicit request =>
+  // with case class
     taskForm.bindFromRequest.fold(
       errors => BadRequest(views.html.index(Task.all(), errors)),
-      label => {
-        Task.create(label)
-        Redirect(routes.Application.tasks)
-      }
+      form => { Task.create(Form.label, Form.description) }
     )
   }
+
+
 
   def deleteTask(id: Long) = Action { implicit request =>
     Task.delete(id)
