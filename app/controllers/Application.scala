@@ -11,8 +11,10 @@ object Application extends Controller {
 
 
   val taskForm = Form(
-    "label" -> nonEmptyText,
-    "description" -> nonEmptyText
+    tuple(
+      "label" -> nonEmptyText,
+      "description" -> nonEmptyText
+    )
   )
 
   def index = Action {
@@ -27,7 +29,13 @@ object Application extends Controller {
   // with case class
     taskForm.bindFromRequest.fold(
       errors => BadRequest(views.html.index(Task.all(), errors)),
-      form => { Task.create(Form.label, Form.description) }
+      {
+        case (label, description) =>{
+          Task.create( label, description)
+          Redirect(routes.Application.tasks)
+        }
+      }
+      
     )
   }
 
