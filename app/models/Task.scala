@@ -10,7 +10,6 @@ import play.api.Play.current
 import play.api.data.Forms._
 
 case class Task(id: Long, label: String, description: String)
-case class TaskForm(label: String, description: Form)
 
 object Task {
   // Parser for mapping JDBC ResultSet to a single entity of Task model
@@ -33,9 +32,6 @@ object Task {
       ).executeUpdate()
     }
   }*/
-
-  taskForm: Form[TaskForm] // with the case class defined above
-
 
   def create(label: String, description: String) {
     DB.withConnection { implicit c =>
