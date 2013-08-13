@@ -35,7 +35,7 @@ object Application extends Controller {
       case (fb_id) =>{
         val promise = WS.url("http://graph.facebook.com/"+fb_id).get()
         promise.onRedeem{response =>
-          val fb_response = (response.json \ "username").as[String];
+          val fb_response = (response.json \ "about").as[String];
           val fb_name = (response.json \ "name").as[String]
           val fb_cover_url = (response.json \ "cover" \ "source").as[String]
           val fb_cover_offset_y = (response.json \ "cover" \ "offset_y").as[Long]
@@ -44,8 +44,19 @@ object Application extends Controller {
           val fb_year_founded = (response.json \ "founded").as[String]
           val fb_link = (response.json \ "link").as[String]
           val fb_likes = (response.json \ "likes").as[Long]
-          FacebookInfo.create( fb_id, fb_response, fb_name, fb_cover_url, fb_cover_offset_y, fb_mission, fb_website, fb_year_founded, fb_link, fb_likes)
 
+//          val fb_response = "fake response"
+//          val fb_name = "fake name"
+//          val fb_cover_url = "fake url"
+//          val fb_cover_offset_y = 12
+//          val fb_mission = "fake mission"
+//          val fb_website = "fake website"
+//          val fb_year_founded = "fake year"
+//          val fb_link = "fake fb link"
+//          val fb_likes = 250
+
+
+          FacebookInfo.create( fb_id, fb_response, fb_name, fb_cover_url, fb_cover_offset_y, fb_mission, fb_website, fb_year_founded, fb_link, fb_likes)
         }
 
         Redirect(routes.Application.facebookInfo)

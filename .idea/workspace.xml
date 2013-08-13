@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfa6b457-b296-456d-8a10-dad935efda08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/evolutions/default/2.sql" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Task.scala" afterPath="$PROJECT_DIR$/app/models/FacebookInfo.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/evolutions/default/1.sql" afterPath="$PROJECT_DIR$/conf/evolutions/default/1.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.scala" afterPath="$PROJECT_DIR$/app/controllers/Application.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.scala.html" afterPath="$PROJECT_DIR$/app/views/index.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="todolist.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376400151393" ignored="false" />
-    <file path="/Application.scala" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376410708080" ignored="false" />
+    <file path="/Application.scala" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376412196123" ignored="false" />
     <file path="/Task.scala" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1359675074146" ignored="false" />
     <file path="/FacebookInformation.scala" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376082712039" ignored="false" />
     <file path="/FacebookInfo.scala" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376410686080" ignored="false" />
     <file path="/3.sql" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376177164955" ignored="false" />
     <file path="/routes" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376178003347" ignored="false" />
-    <file path="/index.scala.html" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376356736368" ignored="false" />
+    <file path="/index.scala.html" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376413131846" ignored="false" />
     <file path="/4.sql" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376179597686" ignored="false" />
     <file path="/facebookService.scala" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376234137366" ignored="false" />
     <file path="$USER_HOME$/Changecause/webapp/app/controllers/UserController.scala" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376331091001" ignored="false" />
@@ -29,7 +24,8 @@
     <file path="$USER_HOME$/Changecause/webapp/app/views/sponsor.scala.html" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376332733236" ignored="false" />
     <file path="/sponsor.scala.html" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376332733236" ignored="false" />
     <file path="/5.sql" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376368652895" ignored="false" />
-    <file path="/1.sql" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376410734282" ignored="false" />
+    <file path="/1.sql" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376411548414" ignored="false" />
+    <file path="/a.dummy" changelist="bfa6b457-b296-456d-8a10-dad935efda08" time="1376411535310" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       <file leaf-file-name="Application.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="68" selection-start="834" selection-end="834" vertical-scroll-proportion="0.74825174">
+            <state line="42" column="65" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.3877551">
               <folding>
                 <element signature="e#21#38#0" expanded="true" />
               </folding>
@@ -101,10 +97,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.scala.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="11" selection-start="165" selection-end="165" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FacebookInfo.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/FacebookInfo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+            <state line="36" column="207" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#16#30#0" expanded="true" />
               </folding>
@@ -115,7 +120,7 @@
       <file leaf-file-name="1.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/evolutions/default/1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="26" selection-start="285" selection-end="285" vertical-scroll-proportion="-6.6">
+            <state line="16" column="24" selection-start="436" selection-end="436" vertical-scroll-proportion="-9.6">
               <folding />
             </state>
           </provider>
@@ -148,11 +153,11 @@
         <option value="$PROJECT_DIR$/app/views/social.scala.html" />
         <option value="$PROJECT_DIR$/app/services/facebookService.scala" />
         <option value="$PROJECT_DIR$/app/services/FacebookService.scala" />
-        <option value="$PROJECT_DIR$/app/views/index.scala.html" />
         <option value="$PROJECT_DIR$/conf/evolutions/default/4.sql" />
         <option value="$PROJECT_DIR$/conf/evolutions/default/5.sql" />
         <option value="$PROJECT_DIR$/conf/evolutions/default/6.sql" />
         <option value="$PROJECT_DIR$/app/models/FacebookInfo.scala" />
+        <option value="$PROJECT_DIR$/app/views/index.scala.html" />
         <option value="$PROJECT_DIR$/conf/evolutions/default/1.sql" />
         <option value="$PROJECT_DIR$/app/controllers/Application.scala" />
       </list>
@@ -244,64 +249,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todolist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todolist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todolist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todolist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FacebookInfo.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todolist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todolist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,7 +411,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -479,7 +426,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.9924731" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.6706349" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -554,7 +501,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
@@ -574,11 +523,6 @@
         <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.12362637" />
@@ -589,32 +533,46 @@
         <state line="39" column="34" selection-start="922" selection-end="922" vertical-scroll-proportion="0.6280992" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+    <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="1" selection-start="489" selection-end="489" vertical-scroll-proportion="0.6196581">
+        <state line="12" column="16" selection-start="440" selection-end="440" vertical-scroll-proportion="0.2556818">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/evolutions/default/1.sql">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="285" selection-end="285" vertical-scroll-proportion="-6.6">
+        <state line="190" column="23" selection-start="4629" selection-end="4629" vertical-scroll-proportion="0.33194155">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/FacebookInfo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+        <state line="36" column="207" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#16#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="165" selection-end="165" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/evolutions/default/1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="24" selection-start="436" selection-end="436" vertical-scroll-proportion="-9.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="68" selection-start="834" selection-end="834" vertical-scroll-proportion="0.74825174">
+        <state line="42" column="65" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.3877551">
           <folding>
             <element signature="e#21#38#0" expanded="true" />
           </folding>

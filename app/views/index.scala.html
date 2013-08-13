@@ -4,19 +4,41 @@
 
 @main("Facebook Scraper") {
 
-<h1>@fbinfo.size FB Profiles</h1>
+<h1>@fbinfo.size FB Values</h1>
 
-<ul>
+    <table border="1">
+        <th>
+            <td>ID</td>
+            <td>About</td>
+            <td>Name</td>
+            <td>Cover Url</td>
+            <td>Offset Y</td>
+            <td>FB Link</td>
+            <td>Likes</td>
+            <td>Misison</td>
+            <td>Website</td>
+            <td>Founded</td>
+        </th>
     @fbinfo.map { fb =>
-    <li>
-        @fb.fb_id, @fb.fb_response
+        <tr>
+            <td>@form(routes.Application.deleteFacebookInfo(fb.id)) {
+                <input type="submit" value="Delete">
+                }</td>
+            <td>@fb.fb_id</td>
+            <td>@fb.fb_response</td>
+            <td>@fb.fb_name</td>
+            <td>@fb.fb_cover_url</td>
+            <td>@fb.fb_cover_offset_y</td>
+            <td>@fb.fb_link</td>
+            <td>@fb.fb_likes</td>
+            <td>@fb.fb_mission</td>
+            <td>@fb.fb_website</td>
+            <td>@fb.fb_year_founded</td>
+        </tr>
 
-        @form(routes.Application.deleteFacebookInfo(fb.id)) {
-        <input type="submit" value="Delete">
-        }
-    </li>
+
     }
-</ul>
+    </table>
 
 <h2>Add a new Profile</h2>
 
