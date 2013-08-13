@@ -2,58 +2,63 @@ package controllers
 
 import play.api._
 import play.api.mvc._
-
+import play.api.libs.ws.WS
 import play.api.data._
 import play.api.data.Forms._
+import play.api.libs.json._
+
 import models._
 
 object Application extends Controller {
 
 
-  val taskForm = Form(
-    tuple(
-      "label" -> nonEmptyText,
-      "description" -> nonEmptyText
-    )
+  val fbForm = Form(
+      "fb_id" -> longNumber
   )
 
   def index = Action {
-    Redirect(routes.Application.tasks)
+    Redirect(routes.Application.facebookInfo)
   }
 
-  def tasks = Action {
-    Ok(views.html.index(Task.all(), taskForm))
+  def facebookInfo = Action {
+
+        Ok(views.html.index(FacebookInfo.all(),fbForm))
+
   }
 
-  def newTask = Action { implicit request =>
+  def newFacebookInfo = Action { implicit request =>
   // with case class
-    taskForm.bindFromRequest.fold(
-      errors => BadRequest(views.html.index(Task.all(), errors)),
-      {
-        case (label, description) =>{
-          Task.create( label, description)
-          Redirect(routes.Application.tasks)
+
+    fbForm.bindFromRequest.fold(
+    errors => BadRequest(views.html.index(FacebookInfo.all(), errors)),
+    {
+      case (fb_id) =>{
+        val promise = WS.url("http://graph.facebook.com/"+fb_id).get()
+        promise.onRedeem{response =>
+          val fb_response = (response.json \ "username").as[String];
+          val fb_name = (response.json \ "name").as[String]
+          val fb_cover_url = (response.json \ "cover" \ "source").as[String]
+          val fb_cover_offset_y = (response.json \ "cover" \ "offset_y").as[Long]
+          val fb_mission = (response.json \ "mission").as[String]
+          val fb_website = (response.json \ "website").as[String]
+          val fb_year_founded = (response.json \ "founded").as[String]
+          val fb_link = (response.json \ "link").as[String]
+          val fb_likes = (response.json \ "likes").as[Long]
+          FacebookInfo.create( fb_id, fb_response, fb_name, fb_cover_url, fb_cover_offset_y, fb_mission, fb_website, fb_year_founded, fb_link, fb_likes)
+
         }
+
+        Redirect(routes.Application.facebookInfo)
+
       }
-      
+    }
+
     )
   }
 
-
-
-  def deleteTask(id: Long) = Action { implicit request =>
-    Task.delete(id)
-    Redirect(routes.Application.tasks)
+  def deleteFacebookInfo(id: Long) = Action { implicit request =>
+    FacebookInfo.delete(id)
+    Redirect(routes.Application.facebookInfo)
   }
-
-
-
-
-
-
-
-
-
-
 
 }
