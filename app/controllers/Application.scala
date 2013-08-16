@@ -35,15 +35,15 @@ object Application extends Controller {
       case (fb_id) =>{
         val promise = WS.url("http://graph.facebook.com/"+fb_id).get()
         promise.onRedeem{response =>
-          val fb_response = (response.json \ "about").as[String];
-          val fb_name = (response.json \ "name").as[String]
-          val fb_cover_url = (response.json \ "cover" \ "source").as[String]
-          val fb_cover_offset_y = (response.json \ "cover" \ "offset_y").as[Long]
-          val fb_mission = (response.json \ "mission").as[String]
-          val fb_website = (response.json \ "website").as[String]
-          val fb_year_founded = (response.json \ "founded").as[String]
-          val fb_link = (response.json \ "link").as[String]
-          val fb_likes = (response.json \ "likes").as[Long]
+          val fb_response = (response.json \ "about").as[Option[String]].getOrElse("none");
+          val fb_name = (response.json \ "name").as[Option[String]].getOrElse("none");
+          val fb_cover_url = (response.json \ "cover" \ "source").as[Option[String]].getOrElse("none");
+          val fb_cover_offset_y = (response.json \ "cover" \ "offset_y").as[Long];
+          val fb_mission = (response.json \ "mission").as[Option[String]].getOrElse("none");
+          val fb_website = (response.json \ "website").as[Option[String]].getOrElse("none");
+          val fb_year_founded = (response.json \ "founded").as[Option[String]].getOrElse("none");
+          val fb_link = (response.json \ "link").as[Option[String]].getOrElse("none");
+          val fb_likes = (response.json \ "likes").as[Long];
 
 //          val fb_response = "fake response"
 //          val fb_name = "fake name"

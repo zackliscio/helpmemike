@@ -3,7 +3,15 @@
 @import helper._
 
 @main("Facebook Scraper") {
+    <h2>Enter Facebook ID#</h2>
 
+    @form(routes.Application.newFacebookInfo) {
+
+        @inputText(fbForm("fb_id"))
+
+        <input type="submit" value="Create">
+
+    }
 <h1>@fbinfo.size FB Values</h1>
 
     <table border="1">
@@ -39,16 +47,4 @@
 
     }
     </table>
-
-<h2>Add a new Profile</h2>
-
-@form(routes.Application.newFacebookInfo) {
-
-@inputText(fbForm("fb_id"))
-
-
-<input type="submit" value="Create">
-
-}
-
 }
